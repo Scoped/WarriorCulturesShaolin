@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties version="1.0">
+	<comment>English (en_US) Localization File</comment>
+	<entry key="tile.BambooBlock.name">Bamboo Block</entry>
+	<entry key="tile.CherryWoodPlanks.name">CherryWood Planks</entry>
+	
+	<entry key="tile.Ore1.name">Ore1 123</entry>
+	<entry key="tile.Ore2.name">Ore2 231</entry>
+	<entry key="tile.Ore3.name">Ore3 321</entry>
+	
+	<entry key="tile.BlockOre0.name">Blue</entry>
+	<entry key="tile.BlockOre1.name">White</entry>
+	<entry key="tile.BlockOre2.name">Green</entry>
+	
+	<entry key="item.ShaolinBroadSword.name">Shaolin BroadSword</entry>
+	
+	<entry key="itemGroup.TabWCS">WarriorCultures Shaolin</entry>
+</properties>

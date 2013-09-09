@@ -1,0 +1,16 @@
+[
+{
+	"modid": "WCS",
+	"name": "WarriorCultures Shaolin",
+	"description": "Now its truly fighting!",
+	"version": "0.0.1",
+	"url": "http://www.minecraftforum.net/topic/1050357-wip-warrior-cultures-updated-coders-needed-structure-builders-needed-competition/",
+	"authorList": ["obsidianCore, Scorpio"],
+	"credits": "obsidianCore, CraftedScorpio",
+	"logoFile": "",
+	"screenshots": [],
+	"parent":"",
+	"dependencies": ["Forge-1.6.2-9.10.0.789, WarriorCulturesCore-1.6.2-1.0.0a"],
+	"mcversion": "1.6.2"
+}
+]
