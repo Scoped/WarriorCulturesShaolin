@@ -2,17 +2,6 @@ package WarriorCulturesShaolin.Scoped.com.github.lib;
 
 public class ItemIDs
 {
-	static int numberCounter = 0;
-	static int numberOfFinalInts = 21;
-	
-	public static int Counter()
-	{
-		for (int i = 0; i < numberOfFinalInts; i++)
-		{
-			return numberCounter = i;
-		}
-		return numberCounter;
-	}
 	
 	/**
 	 * Shaolin Student: Armor - Number of final ints: 4
