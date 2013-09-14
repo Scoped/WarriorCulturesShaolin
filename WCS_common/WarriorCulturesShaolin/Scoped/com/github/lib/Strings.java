@@ -31,6 +31,7 @@ public class Strings
 	 * Items
 	 */
 	public static final String ITEM_SHAOLIN_NAME = "Item";
+	public static final String ITEM_SHAOLIN_BAMBOOSTICK_NAME = "BambooShaft";
 	
 	/**
 	 * Shaolin Student: Armor

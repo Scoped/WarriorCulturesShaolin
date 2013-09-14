@@ -11,6 +11,7 @@ public class ModItems
 	 * Shaolin: Items
 	 */
 	public static Item Shaolin_Blades;
+	public static Item Shaolin_BambooShaft;
 	
 	/**
 	 * Shaolin Student: Armor
@@ -74,6 +75,7 @@ public class ModItems
 		Shaolin_Machete = new Item_Weapon_Shaolin_Machete(ItemIDs.ITEM_SHAOLIN_MACHETE_ID, WarriorCultures_Shaolin.ShaolinTools);
 		Shaolin_Butterfly = new Item_Weapon_Shaolin_Butterfly(ItemIDs.ITEM_SHAOLIN_BUTTERFLY_ID, WarriorCultures_Shaolin.ShaolinTools);
 		Shaolin_RisingSun = new Item_Weapon_Shaolin_RisingSun(ItemIDs.ITEM_SHAOLIN_RISINGSUN_ID, WarriorCultures_Shaolin.ShaolinTools);
+		Shaolin_BambooShaft = new Item_Shaolin_BambooShaft(ItemIDs.ITEM_SHAOLIN_BAMBOOSHAFT_ID);
 		
 		/**
 		 * Tools

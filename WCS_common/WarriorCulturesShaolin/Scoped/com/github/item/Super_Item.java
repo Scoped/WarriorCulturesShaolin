@@ -8,10 +8,10 @@ import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class Super_Item_Item extends Item
+public class Super_Item extends Item
 {
 
-	public Super_Item_Item(int id)
+	public Super_Item(int id)
 	{
 		super(id);
 		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_NAME);

@@ -13,7 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 
-public class Item_Items_ShaolinBlades extends Super_Item_Item
+public class Item_Items_ShaolinBlades extends Super_Item
 {
 	/** List of blade types. */
     public static final String[] bladeTypes = new String[] {"Butterfly", "Dao", "Cresent", "Hook", "Polearm", "RisingSun", "Shear", "Machete", "Sword"};

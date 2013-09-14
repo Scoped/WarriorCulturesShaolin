@@ -6,6 +6,7 @@ public class ItemIDs
 	 * Shaoli: Items
 	 */
 	public static final int ITEM_SHAOLINBLADES_ID_DEFAULT = 3862;
+	public static final int ITEM_SHAOLIN_BAMBOOSHAFT_ID_DEFAULT = 3863;
 	
 	/**
 	 * Shaolin Student: Armor - Number of final ints: 4
@@ -61,6 +62,7 @@ public class ItemIDs
 	 * Shaolin Items
 	 */
 	public static int ITEM_SHAOLINBLADES_ID;
+	public static int ITEM_SHAOLIN_BAMBOOSHAFT_ID;
 	
 	/**
 	 * Shaolin Student: Armor
