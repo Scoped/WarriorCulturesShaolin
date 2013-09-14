@@ -4,7 +4,7 @@ import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 
-public class Block_CherryWoodPlanks extends Super_Block_Block
+public class Block_CherryWoodPlanks extends Super_Block
 {
 
 	public Block_CherryWoodPlanks(int id)

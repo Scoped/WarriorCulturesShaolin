@@ -1,36 +1,31 @@
 package WarriorCulturesShaolin.Scoped.com.github.block;
 
-import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
+import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import net.minecraft.block.Block;
 import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.World;
 
-public class Block_BambooBlock extends Super_Block_LogTextures
+public class Block_ThatchBlock extends Super_Block_LogTextures
 {
 	@SideOnly(Side.CLIENT)
 	public static Icon iconSide;
 	@SideOnly(Side.CLIENT)
 	public static Icon iconTop;
 	
-	public Block_BambooBlock(int id)
+	public Block_ThatchBlock(int id)
 	{
-		super(id, Material.wood);
-		this.setUnlocalizedName(Strings.BLOCK_BAMBOOBLOCK_NAME);
+		super(id, Material.grass);
+		this.setUnlocalizedName(Strings.BLOCK_THATCHBLOCK_NAME);
 	}
 	
 	@SideOnly(Side.CLIENT)
 	
 	public Icon func_111048_c(int i)
 	{
-		i = 0;
 		return this.iconSide;
 	}
 	
@@ -38,7 +33,6 @@ public class Block_BambooBlock extends Super_Block_LogTextures
 	
 	protected Icon func_111049_d(int i)
 	{
-		i = 0;
 		return this.iconTop;
 	}
 	
@@ -51,8 +45,8 @@ public class Block_BambooBlock extends Super_Block_LogTextures
      */
 	public void registerIcons(IconRegister icon)
 	{
-		iconSide = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_vertical"));
-		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_top"));
+		iconSide = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_vertical"));
+		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_side"));
 	}
 	
 	protected String getUnwrappedUnlocalizedName(String unlocalizedName)

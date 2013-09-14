@@ -2,6 +2,10 @@ package WarriorCulturesShaolin.Scoped.com.github.lib;
 
 public class ItemIDs
 {
+	/**
+	 * Shaoli: Items
+	 */
+	public static final int ITEM_SHAOLINBLADES_ID_DEFAULT = 3862;
 	
 	/**
 	 * Shaolin Student: Armor - Number of final ints: 4
@@ -14,10 +18,10 @@ public class ItemIDs
 	/**
 	 * Shaolin Student: Weapons - Number of final ints: 4
 	 */
-	public static final int ITEM_SHAOLIN_KNIFE_ID_DEFAULT = 3845;
-	public static final int ITEM_SHAOLIN_SABRE_ID_DEFAULT = 3846;
+	public static final int ITEM_SHAOLIN_MACHETE_ID_DEFAULT = 3845;
+	public static final int ITEM_SHAOLIN_BUTTERFLY_ID_DEFAULT = 3846;
 	public static final int ITEM_SHAOLIN_RISINGSUN_ID_DEFAULT = 3847;
-	public static final int ITEM_SHAOLIN_BROADSWORD_ID_DEFAULT = 3848;
+	public static final int ITEM_SHAOLIN_DAO_ID_DEFAULT = 3848;
 	
 	/**
 	 * Shaolin Student: Spears(Top) - Number of final ints: 1
@@ -53,6 +57,10 @@ public class ItemIDs
 	public static final int ITEM_MONK_POLEARM_ID_DEFAULT = 3861;
 	
 	// None Final Ints
+	/**
+	 * Shaolin Items
+	 */
+	public static int ITEM_SHAOLINBLADES_ID;
 	
 	/**
 	 * Shaolin Student: Armor
@@ -65,9 +73,9 @@ public class ItemIDs
 	/**
 	 * Shaolin Student: Weapons
 	 */
-	public static int ITEM_SHAOLIN_BROADSWORD_ID;
-	public static int ITEM_SHAOLIN_KNIFE_ID;
-	public static int ITEM_SHAOLIN_SABRE_ID;
+	public static int ITEM_SHAOLIN_DAO_ID;
+	public static int ITEM_SHAOLIN_MACHETE_ID;
+	public static int ITEM_SHAOLIN_BUTTERFLY_ID;
 	public static int ITEM_SHAOLIN_RISINGSUN_ID;
 	
 	/**

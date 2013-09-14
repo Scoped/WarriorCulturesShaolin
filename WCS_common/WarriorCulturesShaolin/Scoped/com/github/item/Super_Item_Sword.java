@@ -1,21 +1,23 @@
 package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.item.Item;
+import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemSword;
 import WarriorCulturesShaolin.Scoped.com.github.WarriorCultures_Shaolin;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class Super_Item_Item extends Item
+public class Super_Item_Sword extends ItemSword
 {
-
-	public Super_Item_Item(int id)
+	
+	public Super_Item_Sword(int par1, EnumToolMaterial par2EnumToolMaterial)
 	{
-		super(id);
+		super(par1, par2EnumToolMaterial);
 		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_NAME);
 		this.setCreativeTab(WarriorCultures_Shaolin.TabWCS);
+        this.maxStackSize = 1;
 	}
 	
 	@Override
@@ -34,5 +36,4 @@ public class Super_Item_Item extends Item
 	{
 		return unlocalizedName.substring(unlocalizedName.indexOf(".")+1);
 	}
-	
 }

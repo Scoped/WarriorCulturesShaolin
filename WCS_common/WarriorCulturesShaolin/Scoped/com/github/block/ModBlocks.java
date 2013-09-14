@@ -1,46 +1,43 @@
 package WarriorCulturesShaolin.Scoped.com.github.block;
 
-import cpw.mods.fml.common.registry.GameRegistry;
-import WarriorCulturesShaolin.Scoped.com.github.item.Item_Block_MetaOres;
+import net.minecraft.block.Block;
+import net.minecraft.block.BlockHalfSlab;
+import net.minecraft.block.material.Material;
 import WarriorCulturesShaolin.Scoped.com.github.lib.BlockIDs;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
-import net.minecraft.block.Block;
 
 
 public class ModBlocks
 {
 	public static Block BambooBlock;
 	public static Block CherryWoodPlanks;
+	public static Block ThatchBlock;
+	public static Block BambooPaperWall;
+	public static Block CherryPaperWall;
+	public static Block WCSGlassBlock;
+	public static Block WCSGlassPane;
 	
-	public static Block MetaOreBlocks;
-	
-	public static Block Ore1;
-	public static Block Ore2;
-	public static Block Ore3;
+	public static BlockHalfSlab CherryPlanksSingleSlab;
+	public static BlockHalfSlab CherryPlanksDoubleSlab;
+	public static BlockHalfSlab BambooSingleSlab;
+	public static BlockHalfSlab BambooDoubleSlab;
+	public static BlockHalfSlab ThatchSingleSlab;
+	public static BlockHalfSlab ThatchDoubleSlab;
 	
 	public static void BlocksInit()
 	{
 		BambooBlock = new Block_BambooBlock(BlockIDs.BLOCK_BAMBOOBLOCK_ID);
-		
 		CherryWoodPlanks = new Block_CherryWoodPlanks(BlockIDs.BLOCK_PLANKS_CHERRYWOOD_ID);
+		CherryPlanksSingleSlab = (BlockHalfSlab) new BlockHalfSlab_CherryPlanksSlab(BlockIDs.BLOCKHALFSLAB_CHERRYPLANKSSINGLESLAB_ID, false, Material.wood).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLECHERRYWOOD_NAME).setStepSound(Block.soundWoodFootstep);
+		CherryPlanksDoubleSlab = (BlockHalfSlab)new BlockHalfSlab_CherryPlanksSlab(BlockIDs.BLOCKHALFSLAB_CHERRYPLANKSDOUBLESLAB_ID, true, Material.wood).setUnlocalizedName(Strings.BLOCKHALFSLAB_DOUBLECHERRYWOOD_NAME).setStepSound(Block.soundWoodFootstep);
+		BambooSingleSlab = (BlockHalfSlab)new BlockHalfSlab_BambooSlabs(BlockIDs.BLOCKHALFSLAB_BAMBOOSINGLESLAB_ID, false, Material.wood).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLEBAMBOO_NAME).setStepSound(Block.soundWoodFootstep);
+		BambooDoubleSlab = (BlockHalfSlab)new BlockHalfSlab_BambooSlabs(BlockIDs.BLOCKHALFSLAB_BAMBOODOUBLESLAB_ID, true, Material.wood).setUnlocalizedName(Strings.BLOCKHALFSLAB_DOUBLEBAMBOO_NAME).setStepSound(Block.soundWoodFootstep);
+		ThatchSingleSlab = (BlockHalfSlab)new BlockHalfSlab_ThatchSlabs(BlockIDs.BLOCKHALFSLAB_THATCHSINGLESLAB_ID, false, Material.grass).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLETHATCH_NAME).setStepSound(Block.soundGrassFootstep);
+		ThatchDoubleSlab = (BlockHalfSlab)new BlockHalfSlab_ThatchSlabs(BlockIDs.BLOCKHALFSLAB_THATCHDOUBLESLAB_ID, true, Material.grass).setUnlocalizedName(Strings.BLOCKHALFSLAB_DOUBLETHATCH_NAME).setStepSound(Block.soundGrassFootstep);
+		BambooPaperWall = new BlockPane_BambooPaperWall(BlockIDs.BLOCK_PANE_BAMBOOPAPERWALL_ID, "BambooPaperWall", "BambooBlock_horizontal", Material.cactus, false);
+		CherryPaperWall = new BlockPane_CherryPaperWall(BlockIDs.BLOCK_PANE_CHERRYPAPERWALL_ID, "CherryPaperWall", "CherryWoodPlanks", Material.cactus, false);
+		WCSGlassBlock = new Block_GlassBlock(BlockIDs.BLOCK_GLASSBLOCK_ID, Material.glass, false);
+		ThatchBlock = new Block_ThatchBlock(BlockIDs.BLOCK_THATCHBLOCK_ID);
 		
-		MetaOreBlocks = new Block_Meta_OreBlocks(BlockIDs.BLOCK_META_OREBLOCKS_ID);
-		
-		Ore1 = new Block_Ore_Ore1(BlockIDs.BLOCK_ORE_ORE1_ID);
-		Ore2 = new Block_Ore_Ore2(BlockIDs.BLOCK_ORE_ORE2_ID);
-		Ore3 = new Block_Ore_Ore3(BlockIDs.BLOCK_ORE_ORE3_ID);
-		
-		/**
-		 * Block GameRegistry
-		 */
-		GameRegistry.registerBlock(BambooBlock, Strings.BLOCK_BAMBOOBLOCK_NAME);
-		
-		GameRegistry.registerBlock(CherryWoodPlanks, Strings.BLOCK_PLANKS_CHERRYWOOD_NAME);
-		
-		GameRegistry.registerBlock(MetaOreBlocks, Item_Block_MetaOres.class, Strings.BLOCK_META_ORE_METAORES_NAME);
-		
-		GameRegistry.registerBlock(Ore1, Strings.BLOCK_ORE_ORE1_NAME);
-		GameRegistry.registerBlock(Ore2, Strings.BLOCK_ORE_ORE2_NAME);
-		GameRegistry.registerBlock(Ore3, Strings.BLOCK_ORE_ORE3_NAME);
 	}
 }

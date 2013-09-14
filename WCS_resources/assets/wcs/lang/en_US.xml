@@ -2,18 +2,48 @@
 <!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
 <properties version="1.0">
 	<comment>English (en_US) Localization File</comment>
+	
 	<entry key="tile.BambooBlock.name">Bamboo Block</entry>
 	<entry key="tile.CherryWoodPlanks.name">CherryWood Planks</entry>
 	
-	<entry key="tile.Ore1.name">Ore1 123</entry>
-	<entry key="tile.Ore2.name">Ore2 231</entry>
-	<entry key="tile.Ore3.name">Ore3 321</entry>
+	<entry key="tile.ThatchBlock.name">Thatch Block</entry>
+	<entry key="tile.GlassBlock.name">Glass Block</entry>
 	
-	<entry key="tile.BlockOre0.name">Blue</entry>
-	<entry key="tile.BlockOre1.name">White</entry>
-	<entry key="tile.BlockOre2.name">Green</entry>
+	<entry key="tile.BambooPaperWall.name">Bamboo PaperWall</entry>
+	<entry key="tile.CherryPaperWall.name">Cherry PaperWall</entry>
 	
-	<entry key="item.ShaolinBroadSword.name">Shaolin BroadSword</entry>
+	<entry key="tile.BambooWoodDoubleSlab.name">Bamboo DoubleSlab</entry>
+	<entry key="tile.BambooWoodSingleSlab.name">Bamboo SingleSlab</entry>
+	<entry key="tile.CherryWoodDoubleSlab.name">CherryWood DoubleSlab</entry>
+	<entry key="tile.CherryWoodSingleSlab.name">CherryWood SingleSlab</entry>
+	<entry key="tile.ThatchDoubleSlab.name">Thatch DoubleSlab</entry>
+	<entry key="tile.ThatchSingleSlab.name">Thatch SingleSlab</entry>
+	
+	<entry key="item.ShaolinDao.name">Shaolin Dao</entry>
+	<entry key="item.ShaolinMonkSword.name">Shaolin Monk Sword</entry>
+	<entry key="item.ShaolinMachete.name">Shaolin Machete</entry>
+	<entry key="item.ShaolinButterfly.name">Shaolin Butterfly</entry>
+	<entry key="item.ShaolinRisingSun.name">Shaolin Rising Sun</entry>
+	<entry key="item.ShaolinHalberd.name">Shaolin Halberd</entry>
+	<entry key="item.ShaolinShovel.name">Shaolin Shovel</entry>
+	<entry key="item.ShaolinShear.name">Shaolin Shear</entry>
+	<entry key="item.ShaolinSpear.name">Shaolin Spear</entry>
+	<entry key="item.ShaolinRopeDart.name">Shaolin RopeDart</entry>
+	<entry key="item.ShaolinHook.name">Shaolin Hook</entry>
+	<entry key="item.ShaolinSword.name">Shaolin Sword</entry>
+	<entry key="item.ShaolinMasterStaff.name">Shaolin Master Staff</entry>
+	
+	<entry key="item.ShaolinDaoBlade.name">Shaolin Dao Blade</entry>
+	<entry key="item.ShaolinSwordBlade.name">Shaolin Sword Blade</entry>
+	<entry key="item.ShaolinMacheteBlade.name">Shaolin Machete Blade</entry>
+	<entry key="item.ShaolinButterflyBlade.name">Shaolin Butterfly Blade</entry>
+	<entry key="item.ShaolinRisingSunBlade.name">Shaolin Rising Sun Blade</entry>
+	<entry key="item.ShaolinShearBlade.name">Shaolin Shear Blade</entry>
+	<entry key="item.ShaolinSpearBlade.name">Shaolin Spear Blade</entry>
+	<entry key="item.ShaolinHookBlade.name">Shaolin Hook Blade</entry>
+	<entry key="item.ShaolinSwordBlade.name">Shaolin Sword Blade</entry>
+	<entry key="item.ShaolinCresentBlade.name">Shaolin Cresent Blade</entry>
+	<entry key="item.ShaolinPolearmBlade.name">Shaolin Polearm Blade</entry>
 	
 	<entry key="itemGroup.TabWCS">WarriorCultures Shaolin</entry>
 </properties>
