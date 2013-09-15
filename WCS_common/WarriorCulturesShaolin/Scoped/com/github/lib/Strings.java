@@ -31,7 +31,13 @@ public class Strings
 	 * Items
 	 */
 	public static final String ITEM_SHAOLIN_NAME = "Item";
-	public static final String ITEM_SHAOLIN_BAMBOOSTICK_NAME = "BambooShaft";
+	public static final String ITEM_SHAOLIN_CLOTHS_NAME = "ColoredCloths";
+	public static final String ITEM_SHAOLIN_BLADES_NAME = "Blades";
+	public static final String ITEM_SHAOLIN_TIPS_NAME = "Tips";
+	public static final String ITEM_SHAOLIN_IRONRING_NAME = "ShaolinIronRing";
+	
+	public static final String ITEM_SHAOLIN_BAMBOOSHAFT_NAME = "BambooShaft";
+	public static final String ITEM_SHAOLIN_STICKS_NAME = "Stick";
 	
 	/**
 	 * Shaolin Student: Armor
@@ -58,35 +64,28 @@ public class Strings
 	 * Shaolin Student: Tools
 	 */
 	public static final String ITEM_SHAOLIN_SHOVEL_NAME = "ShaolinShovel";
-	public static final String ITEM_SHAOLIN_SHEARS_NAME = "ShaolinShear";
-	
-	/**
-	 * Shaolin Student: Armor
-	 */
-	public static final String ITEM_SHAOLIN_STUDENT_LEGS_NAME = "ShaolinLegs";
-	public static final String ITEM_SHAOLIN_STUDENT_ROBE_NAME = "ShaolinRobe";
-	public static final String ITEM_SHAOLIN_STUDENT_HEADBAND_NAME = "ShaolinHeadBand";
-	public static final String ITEM_SHAOLIN_STUDENT_SHOES_NAME = "ShaolinShoes";
+	public static final String ITEM_SHAOLIN_SHEAR_NAME = "ShaolinShear";
 	
 	/**
 	 * Shaolin Monk: Armor
 	 */
-	public static final String ITEM_MONK_RATTANHATSHIELD_NAME = "ShaolinRattanHatShield";
-	public static final String ITEM_MONK_ROBES_NAME = "ShaolinMonkRobes";
-	public static final String ITEM_MONK_SHOES_NAME = "ShaolinMonkShoes";
-	public static final String ITEM_MONK_PANTS_NAME = "ShaolinMonkPants";
+	public static final String ITEM_SHAOLIN_MONK_RATTANHATSHIELD_NAME = "ShaolinRattanHatShield";
+	public static final String ITEM_SHAOLIN_MONK_ROBES_NAME = "ShaolinRobes";
+	public static final String ITEM_SHAOLIN_MONK_SHOES_NAME = "ShaolinShoes";
+	public static final String ITEM_SHAOLIN_MONK_PANTS_NAME = "ShaolinPants";
 	
 	/**
 	 * Shaolin Monk: Weapons
 	 */
-	public static final String ITEM_MONK_ROPEDART_NAME = "ShaolinRopeDart";
-	public static final String ITEM_MONK_HOOK_NAME = "ShaolinHook";
-	public static final String ITEM_MONK_SWORD_NAME = "ShaolinSword";
-	public static final String ITEM_MONK_MASTERSTAFF_NAME = "ShaolinMonkMasterStaff";
+	public static final String ITEM_SHAOLIN_ROPEDART_NAME = "ShaolinRopeDart";
+	public static final String ITEM_SHAOLIN_HOOK_NAME = "ShaolinHook";
+	public static final String ITEM_SHAOLIN_SWORD_NAME = "ShaolinSword";
+	public static final String ITEM_SHAOLIN_MASTERSTAFF_NAME = "ShaolinMasterStaff";
+	public static final String ITEM_SHAOLIN_WEAPONHEADS_NAME = "WeaponHeads";
 	
 	/**
 	 * Shaolin Monk: Spears(Top)
 	 */
-	public static final String ITEM_MONK_SPEAR_NAME = "ShaolinMonkSpear";
-	public static final String ITEM_MONK_POLEARM_NAME = "ShaolinMonkPoleArm";
+	public static final String ITEM_SHAOLIN_SPEAR_NAME = "ShaolinSpear";
+	public static final String ITEM_SHAOLIN_POLEARM_NAME = "ShaolinPoleArm";
 }

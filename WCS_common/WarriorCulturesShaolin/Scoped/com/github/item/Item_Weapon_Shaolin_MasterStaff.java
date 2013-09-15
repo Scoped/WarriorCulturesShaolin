@@ -2,6 +2,7 @@ package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import java.util.List;
 
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
@@ -10,21 +11,19 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 
-public class Item_Weapon_Shaolin_Butterfly extends Super_Item_Sword
+public class Item_Weapon_Shaolin_MasterStaff extends Super_Item_Sword
 {
 	/** List of blade types. */
     public static final String[] types = new String[] {"", "WaxWood"};
     public static final String[] field_94595_b = new String[] {"", "WaxWood"};
-    public static final String weaponName = "Butterfly";
+    public static final String weaponName = "MasterStaff";
     @SideOnly(Side.CLIENT)
     private Icon[] field_94594_d;
 	
-	public Item_Weapon_Shaolin_Butterfly(int par1, EnumToolMaterial enumToolMaterial)
+	public Item_Weapon_Shaolin_MasterStaff(int par1, EnumToolMaterial par2EnumToolMaterial)
 	{
-		super(par1, enumToolMaterial);
+		super(par1, par2EnumToolMaterial);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
 	}

@@ -2,36 +2,30 @@ package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import java.util.List;
 
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 
-public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
+public class Item_Weapon_Shaolin_RopeDart extends Super_Item_Sword
 {
-    /** an array of the blocks this spade is effective against */
-    public static final Block[] blocksEffectiveAgainst = new Block[] {Block.grass, Block.dirt, Block.sand, Block.gravel, Block.snow, Block.blockSnow, Block.blockClay, Block.tilledField, Block.slowSand, Block.mycelium};
-	
 	/** List of blade types. */
-    public static final String[] types = new String[] {"", "WaxWood"};
-    public static final String[] field_94595_b = new String[] {"", "WaxWood"};
-    public static final String weaponName = "Shovel";
+    public static final String[] types = new String[] {""};
+    public static final String[] field_94595_b = new String[] {""};
+    public static final String weaponName = "RopeDart";
     @SideOnly(Side.CLIENT)
     private Icon[] field_94594_d;
 	
-	public Item_Tool_Shaolin_Shovel(int par1, EnumToolMaterial enumToolMaterial)
+	public Item_Weapon_Shaolin_RopeDart(int par1, EnumToolMaterial par2EnumToolMaterial)
 	{
-		super(par1, 1.0F, enumToolMaterial, blocksEffectiveAgainst);
+		super(par1, par2EnumToolMaterial);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_SHOVEL_NAME);
 	}
 	
 	@SideOnly(Side.CLIENT)

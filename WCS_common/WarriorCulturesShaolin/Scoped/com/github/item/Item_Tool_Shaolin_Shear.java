@@ -18,7 +18,7 @@ public class Item_Tool_Shaolin_Shear extends ItemShears
         this.setMaxStackSize(1);
         this.setMaxDamage(250);
         this.setCreativeTab(WarriorCultures_Shaolin.TabWCS);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_SHEARS_NAME);
+		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_SHEAR_NAME);
 	}
 	
 	@Override

@@ -24,14 +24,29 @@
 	<entry key="item.ShaolinMachete.name">Shaolin Machete</entry>
 	<entry key="item.ShaolinButterfly.name">Shaolin Butterfly</entry>
 	<entry key="item.ShaolinRisingSun.name">Shaolin Rising Sun</entry>
-	<entry key="item.ShaolinHalberd.name">Shaolin Halberd</entry>
+	<entry key="item.ShaolinCresent.name">Shaolin Cresent</entry>
 	<entry key="item.ShaolinShovel.name">Shaolin Shovel</entry>
 	<entry key="item.ShaolinShear.name">Shaolin Shear</entry>
 	<entry key="item.ShaolinSpear.name">Shaolin Spear</entry>
+	<entry key="item.ShaolinPolearm.name">Shaolin Polearm</entry>
 	<entry key="item.ShaolinRopeDart.name">Shaolin RopeDart</entry>
 	<entry key="item.ShaolinHook.name">Shaolin Hook</entry>
 	<entry key="item.ShaolinSword.name">Shaolin Sword</entry>
 	<entry key="item.ShaolinMasterStaff.name">Shaolin Master Staff</entry>
+	
+	<entry key="item.ShaolinWaxWoodDao.name">Shaolin WaxWood Dao</entry>
+	<entry key="item.ShaolinMonkWaxWoodSword.name">Shaolin Monk WaxWood Sword</entry>
+	<entry key="item.ShaolinWaxWoodMachete.name">Shaolin WaxWood Machete</entry>
+	<entry key="item.ShaolinWaxWoodButterfly.name">Shaolin WaxWood Butterfly</entry>
+	<entry key="item.ShaolinWaxWoodRisingSun.name">Shaolin WaxWood Rising Sun</entry>
+	<entry key="item.ShaolinWaxWoodCresent.name">Shaolin WaxWood Cresent</entry>
+	<entry key="item.ShaolinWaxWoodShovel.name">Shaolin WaxWood Shovel</entry>
+	<entry key="item.ShaolinWaxWoodShear.name">Shaolin WaxWood Shear</entry>
+	<entry key="item.ShaolinWaxWoodSpear.name">Shaolin WaxWood Spear</entry>
+	<entry key="item.ShaolinWaxWoodPolearm.name">Shaolin WaxWood Polearm</entry>
+	<entry key="item.ShaolinWaxWoodHook.name">Shaolin WaxWood Hook</entry>
+	<entry key="item.ShaolinWaxWoodSword.name">Shaolin WaxWood Sword</entry>
+	<entry key="item.ShaolinWaxWoodMasterStaff.name">Shaolin WaxWood Master Staff</entry>
 	
 	<entry key="item.ShaolinDaoBlade.name">Shaolin Dao Blade</entry>
 	<entry key="item.ShaolinSwordBlade.name">Shaolin Sword Blade</entry>
@@ -44,6 +59,20 @@
 	<entry key="item.ShaolinSwordBlade.name">Shaolin Sword Blade</entry>
 	<entry key="item.ShaolinCresentBlade.name">Shaolin Cresent Blade</entry>
 	<entry key="item.ShaolinPolearmBlade.name">Shaolin Polearm Blade</entry>
+	<entry key="item.ShaolinMasterStaffHead.name">Shaolin Master Staff Head</entry>
+	
+	<entry key="item.ShaolinShovel_Tip.name">Shaolin Shovel Tip</entry>
+	<entry key="item.ShaolinShovelBack_Tip.name">Shaolin Shovel Back Tip</entry>
+	<entry key="item.ShaolinSpear2_Tip.name">Shaolin Spear Tip</entry>
+	<entry key="item.ShaolinIronRing.name">Shaolin IronRing</entry>
+	
+	<entry key="item.BambooShaft.name">Bamboo Shaft</entry>
+	<entry key="item.ShaolinWaxWoodStick.name">WaxWood Stick</entry>
+	<entry key="item.ShaolinRattanStick.name">Rattan Stick</entry>
+	<entry key="item.ClothRed.name">Cloth Red</entry>
+	<entry key="item.ClothOrange.name">Cloth Orange</entry>
+	<entry key="item.ClothYellow.name">Cloth Yellow</entry>
+	<entry key="item.ClothWhite.name">Cloth White</entry>
 	
 	<entry key="itemGroup.TabWCS">WarriorCultures Shaolin</entry>
 </properties>

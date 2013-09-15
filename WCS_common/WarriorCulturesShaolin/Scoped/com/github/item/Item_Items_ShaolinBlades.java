@@ -2,16 +2,14 @@ package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import java.util.List;
 
-import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
-
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class Item_Items_ShaolinBlades extends Super_Item
 {

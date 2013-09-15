@@ -2,36 +2,28 @@ package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import java.util.List;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
-import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
-public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
+public class Item_Items_ShaolinCloth extends Super_Item
 {
-    /** an array of the blocks this spade is effective against */
-    public static final Block[] blocksEffectiveAgainst = new Block[] {Block.grass, Block.dirt, Block.sand, Block.gravel, Block.snow, Block.blockSnow, Block.blockClay, Block.tilledField, Block.slowSand, Block.mycelium};
-	
-	/** List of blade types. */
-    public static final String[] types = new String[] {"", "WaxWood"};
-    public static final String[] field_94595_b = new String[] {"", "WaxWood"};
-    public static final String weaponName = "Shovel";
+	/** List of types. */
+    public static final String[] clothTypes = new String[] {"Red", "Orange", "White", "Yellow"};
+    public static final String[] field_94595_b = new String[] {"Red", "Orange", "White", "Yellow"};
     @SideOnly(Side.CLIENT)
     private Icon[] field_94594_d;
 	
-	public Item_Tool_Shaolin_Shovel(int par1, EnumToolMaterial enumToolMaterial)
+	public Item_Items_ShaolinCloth(int id)
 	{
-		super(par1, 1.0F, enumToolMaterial, blocksEffectiveAgainst);
+		super(id);
 		this.setMaxDamage(0);
 		this.setHasSubtypes(true);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_SHOVEL_NAME);
 	}
 	
 	@SideOnly(Side.CLIENT)
@@ -41,7 +33,7 @@ public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
      */
     public Icon getIconFromDamage(int par1)
     {
-        int j = MathHelper.clamp_int(par1, 0, types.length);
+        int j = MathHelper.clamp_int(par1, 0, clothTypes.length);
         return this.field_94594_d[j];
     }
 	
@@ -51,8 +43,8 @@ public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
      */
     public String getUnlocalizedName(ItemStack par1ItemStack)
     {
-        int i = MathHelper.clamp_int(par1ItemStack.getItemDamage(), 0, types.length);
-        return super.getUnlocalizedName() + types[i] + weaponName;
+        int i = MathHelper.clamp_int(par1ItemStack.getItemDamage(), 0, clothTypes.length);
+        return super.getUnlocalizedName() + clothTypes[i];
     }
 	
     @SideOnly(Side.CLIENT)
@@ -62,7 +54,7 @@ public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
      */
     public void getSubItems(int par1, CreativeTabs par2CreativeTabs, List par3List)
     {
-        for (int j = 0; j < types.length; ++j)
+        for (int j = 0; j < clothTypes.length; ++j)
         {
             par3List.add(new ItemStack(par1, 1, j));
         }
@@ -75,7 +67,7 @@ public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
 
         for (int i = 0; i < field_94595_b.length; ++i)
         {
-            this.field_94594_d[i] = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.func_111208_A() + field_94595_b[i] + weaponName)));
+            this.field_94594_d[i] = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.func_111208_A() + "_" + field_94595_b[i])));
         }
     }
     

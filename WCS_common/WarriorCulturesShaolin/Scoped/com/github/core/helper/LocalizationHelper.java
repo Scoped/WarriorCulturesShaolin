@@ -13,7 +13,6 @@ public class LocalizationHelper
 	{
 		return filename.substring(filename.lastIndexOf("/")+1, filename.lastIndexOf("."));
 	}
-
 	
 	public static String getLocalizationString(String key)
 	{

@@ -1,14 +1,81 @@
 package WarriorCulturesShaolin.Scoped.com.github.item;
 
+import java.util.List;
+
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.EnumToolMaterial;
+import net.minecraft.item.ItemStack;
+import net.minecraft.util.Icon;
+import net.minecraft.util.MathHelper;
+import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 
 public class Item_Weapon_Shaolin_RisingSun extends Super_Item_Sword
 {
+	/** List of blade types. */
+    public static final String[] types = new String[] {"", "WaxWood"};
+    public static final String[] field_94595_b = new String[] {"", "WaxWood"};
+    public static final String weaponName = "RisingSun";
+    @SideOnly(Side.CLIENT)
+    private Icon[] field_94594_d;
 
 	public Item_Weapon_Shaolin_RisingSun(int par1, EnumToolMaterial enumToolMaterial)
 	{
 		super(par1, enumToolMaterial);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_RISINGSUN_NAME);
+		this.setMaxDamage(0);
+		this.setHasSubtypes(true);
 	}
+	
+	 @SideOnly(Side.CLIENT)
+
+	    /**
+	     * Gets an icon index based on an item's damage value
+	     */
+	    public Icon getIconFromDamage(int par1)
+	    {
+	        int j = MathHelper.clamp_int(par1, 0, types.length);
+	        return this.field_94594_d[j];
+	    }
+		
+	    /**
+	     * Returns the unlocalized name of this item. This version accepts an ItemStack so different stacks can have
+	     * different names based on their damage or NBT.
+	     */
+	    public String getUnlocalizedName(ItemStack par1ItemStack)
+	    {
+	        int i = MathHelper.clamp_int(par1ItemStack.getItemDamage(), 0, types.length);
+	        return super.getUnlocalizedName() + types[i] + weaponName;
+	    }
+		
+	    @SideOnly(Side.CLIENT)
+
+	    /**
+	     * returns a list of items with the same ID, but different meta (eg: dye returns 16 items)
+	     */
+	    public void getSubItems(int par1, CreativeTabs par2CreativeTabs, List par3List)
+	    {
+	        for (int j = 0; j < types.length; ++j)
+	        {
+	            par3List.add(new ItemStack(par1, 1, j));
+	        }
+	    }
+	    
+	    @SideOnly(Side.CLIENT)
+	    public void registerIcons(IconRegister icon)
+	    {
+	        this.field_94594_d = new Icon[field_94595_b.length];
+
+	        for (int i = 0; i < field_94595_b.length; ++i)
+	        {
+	            this.field_94594_d[i] = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), getUnwrappedUnlocalizedName(this.func_111208_A() + field_94595_b[i] + weaponName)));
+	        }
+	    }
+	    
+		protected String getUnwrappedUnlocalizedName(String unlocalizedName)
+		{
+			return unlocalizedName.substring(unlocalizedName.indexOf(".")+1);
+		}
 }

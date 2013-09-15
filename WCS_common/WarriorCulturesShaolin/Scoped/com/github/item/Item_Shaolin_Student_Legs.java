@@ -13,7 +13,7 @@ public class Item_Shaolin_Student_Legs extends Super_Item_Cloth
 		this.setAbsorbtionMax(4);
 		this.setAbsorbtionRatio(8);
 		this.setSlotNumber(2);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_STUDENT_LEGS_NAME);
+		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_LEGS_NAME);
 	}
 	
 }
