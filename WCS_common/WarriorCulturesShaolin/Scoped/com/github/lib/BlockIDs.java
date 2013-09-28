@@ -5,10 +5,19 @@ public class BlockIDs
 	/**
 	 * Final block IDs
 	 */
-	public static final int BLOCK_GLASSBLOCK_ID_DEFAULT = 612;
-	public static final int BLOCK_THATCHBLOCK_ID_DEFAULT = 613;
 	public static final int BLOCK_BAMBOOBLOCK_ID_DEFAULT = 600;
 	public static final int BLOCK_PLANKS_CHERRYWOOD_ID_DEFAULT = 601;
+	public static final int BLOCK_CHERRYWOODLOG_ID_DEFAULT = 612;
+	public static final int BLOCK_WAXWOODLOG_ID_DEFAULT = 613;
+	public static final int BLOCK_LEAVES_CHERRYBLOSSOMS_ID_DEFAULT = 614;
+	public static final int BLOCK_THATCHBLOCK_ID_DEFAULT = 620;
+	
+	public static final int BLOCK_STAIRS_CHERRYWOOD_ID_DEFAULT = 615;
+	public static final int BLOCK_STAIRS_BAMBOOWOOD_ID_DEFAULT = 616;
+	public static final int BLOCK_STAIRS_THATCH_ID_DEFAULT = 617;
+	
+	public static final int BLOCK_DOOR_BAMBOOPAPER_ID_DEFAULT = 618;
+	public static final int BLOCK_DOOR_CHERRYPAPER_ID_DEFAULT = 619;
 	
 	public static final int BLOCKHALFSLAB_CHERRYPLANKSSINGLESLAB_ID_DEFAULT = 2450;
 	public static final int BLOCKHALFSLAB_CHERRYPLANKSDOUBLESLAB_ID_DEFAULT = 2451;
@@ -25,8 +34,16 @@ public class BlockIDs
 	 */
 	public static int BLOCK_BAMBOOBLOCK_ID;
 	public static int BLOCK_PLANKS_CHERRYWOOD_ID;
-	public static int BLOCK_GLASSBLOCK_ID;
 	public static int BLOCK_THATCHBLOCK_ID;
+	public static int BLOCK_CHERRYWOODLOG_ID;
+	public static int BLOCK_WAXWOODLOG_ID;
+	public static int BLOCK_LEAVES_CHERRYBLOSSOMS_ID;
+	public static int BLOCK_STAIRS_CHERRYWOOD_ID;
+	public static int BLOCK_STAIRS_BAMBOOWOOD_ID;
+	public static int BLOCK_STAIRS_THATCH_ID;
+	
+	public static int BLOCK_DOOR_CHERRYPAPER_ID;
+	public static int BLOCK_DOOR_BAMBOOPAPER_ID;
 	
 	public static int BLOCKHALFSLAB_CHERRYPLANKSSINGLESLAB_ID;
 	public static int BLOCKHALFSLAB_CHERRYPLANKSDOUBLESLAB_ID;

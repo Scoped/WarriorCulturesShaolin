@@ -2,8 +2,6 @@ package WarriorCulturesShaolin.Scoped.com.github.item;
 
 import java.util.List;
 
-import cpw.mods.fml.relauncher.Side;
-import cpw.mods.fml.relauncher.SideOnly;
 import net.minecraft.block.Block;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.creativetab.CreativeTabs;
@@ -13,6 +11,8 @@ import net.minecraft.util.Icon;
 import net.minecraft.util.MathHelper;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
+import cpw.mods.fml.relauncher.Side;
+import cpw.mods.fml.relauncher.SideOnly;
 
 public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
 {
@@ -83,4 +83,5 @@ public class Item_Tool_Shaolin_Shovel extends Super_Item_Spade
 	{
 		return unlocalizedName.substring(unlocalizedName.indexOf(".")+1);
 	}
+
 }

@@ -16,10 +16,10 @@ import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
-public class Super_Block_LogTextures extends BlockRotatedPillar
+public class Super_Block_Log extends BlockRotatedPillar
 {
 	
-	public Super_Block_LogTextures (int id, Material material)
+	public Super_Block_Log (int id, Material material)
 	{
 		super(id, material);
 		//this.setResistance(0.0F);

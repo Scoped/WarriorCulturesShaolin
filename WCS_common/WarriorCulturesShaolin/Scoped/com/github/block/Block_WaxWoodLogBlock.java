@@ -1,30 +1,42 @@
 package WarriorCulturesShaolin.Scoped.com.github.block;
 
+import net.minecraft.block.material.Material;
+import net.minecraft.client.renderer.texture.IconRegister;
+import net.minecraft.util.Icon;
+import net.minecraft.world.World;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
-import net.minecraft.block.Block;
-import net.minecraft.block.material.Material;
-import net.minecraft.client.renderer.texture.IconRegister;
-import net.minecraft.entity.EntityLivingBase;
-import net.minecraft.item.ItemStack;
-import net.minecraft.util.Icon;
-import net.minecraft.util.MathHelper;
-import net.minecraft.world.World;
 
-public class Block_BambooBlock extends Super_Block_Log
+public class Block_WaxWoodLogBlock extends Super_Block_Log
 {
 	@SideOnly(Side.CLIENT)
 	public static Icon iconSide;
 	@SideOnly(Side.CLIENT)
 	public static Icon iconTop;
 	
-	public Block_BambooBlock(int id)
+	public Block_WaxWoodLogBlock(int id)
 	{
 		super(id, Material.wood);
-		this.setUnlocalizedName(Strings.BLOCK_BAMBOOBLOCK_NAME);
+		this.setHardness(2.0F);
+		this.setStepSound(soundWoodFootstep);
+		this.setUnlocalizedName(Strings.BLOCK_WAXWOODLOG_NAME);
 	}
+	
+    @Override
+    
+    public boolean canSustainLeaves(World world, int x, int y, int z)
+    {
+        return true;
+    }
+    
+    @Override
+    
+    public boolean isWood(World world, int x, int y, int z)
+    {
+        return true;
+    }
 	
 	@SideOnly(Side.CLIENT)
 	
@@ -51,8 +63,8 @@ public class Block_BambooBlock extends Super_Block_Log
      */
 	public void registerIcons(IconRegister icon)
 	{
-		iconSide = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_vertical"));
-		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_top"));
+		iconSide = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "WaxWoodLog_Side"));
+		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "WaxWoodLog_Top"));
 	}
 	
 	protected String getUnwrappedUnlocalizedName(String unlocalizedName)

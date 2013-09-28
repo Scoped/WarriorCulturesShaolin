@@ -10,7 +10,7 @@ public class Item_Shaolin_Student_Shoes extends Super_Item_Cloth
 	public Item_Shaolin_Student_Shoes(int par1, EnumArmorMaterial enumArmorMaterial, int i, int j)
 	{
 		super(par1, enumArmorMaterial, i, j);
-		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_SHOES_NAME);
+		this.setUnlocalizedName(Strings.ITEM_SHAOLIN_STUDENT_SHOES_NAME);
 	}
 
 }

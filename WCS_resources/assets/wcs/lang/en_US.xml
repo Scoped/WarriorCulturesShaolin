@@ -4,20 +4,25 @@
 	<comment>English (en_US) Localization File</comment>
 	
 	<entry key="tile.BambooBlock.name">Bamboo Block</entry>
-	<entry key="tile.CherryWoodPlanks.name">CherryWood Planks</entry>
-	
+	<entry key="tile.CherryWoodPlanks.name">Cherry Wood Planks</entry>
+	<entry key="tile.CherryWoodLog.name">Cherry Wood Log</entry>
+	<entry key="tile.WaxWoodLog.name">Wax Wood Log</entry>
 	<entry key="tile.ThatchBlock.name">Thatch Block</entry>
-	<entry key="tile.GlassBlock.name">Glass Block</entry>
+	<entry key="tile.CherryBlossoms.name">Cherry Leaves</entry>
+	<entry key="tile.CherryWoodStairs.name">Cherry Wood Stairs</entry>
+	<entry key="tile.BambooWoodStairs.name">Bamboo Wood Stairs</entry>
+	<entry key="tile.ThatchStairs.name">Thatch Stairs</entry>
+	<entry key="tile.CherryWoodSlidingDoor.name">Cherry Wood Sliding Door</entry>
 	
-	<entry key="tile.BambooPaperWall.name">Bamboo PaperWall</entry>
-	<entry key="tile.CherryPaperWall.name">Cherry PaperWall</entry>
+	<entry key="tile.BambooPaperWall.name">Bamboo Paper Wall</entry>
+	<entry key="tile.CherryPaperWall.name">Cherry Paper Wall</entry>
 	
-	<entry key="tile.BambooWoodDoubleSlab.name">Bamboo DoubleSlab</entry>
-	<entry key="tile.BambooWoodSingleSlab.name">Bamboo SingleSlab</entry>
-	<entry key="tile.CherryWoodDoubleSlab.name">CherryWood DoubleSlab</entry>
-	<entry key="tile.CherryWoodSingleSlab.name">CherryWood SingleSlab</entry>
-	<entry key="tile.ThatchDoubleSlab.name">Thatch DoubleSlab</entry>
-	<entry key="tile.ThatchSingleSlab.name">Thatch SingleSlab</entry>
+	<entry key="tile.BambooWoodDoubleSlab.name">Bamboo Double Slab</entry>
+	<entry key="tile.BambooWoodSingleSlab.name">Bamboo Single Slab</entry>
+	<entry key="tile.CherryWoodDoubleSlab.name">Cherry Wood Double Slab</entry>
+	<entry key="tile.CherryWoodSingleSlab.name">Cherry Wood Single Slab</entry>
+	<entry key="tile.ThatchDoubleSlab.name">Thatch Double Slab</entry>
+	<entry key="tile.ThatchSingleSlab.name">Thatch Single Slab</entry>
 	
 	<entry key="item.ShaolinDao.name">Shaolin Dao</entry>
 	<entry key="item.ShaolinMonkSword.name">Shaolin Monk Sword</entry>
@@ -33,20 +38,16 @@
 	<entry key="item.ShaolinHook.name">Shaolin Hook</entry>
 	<entry key="item.ShaolinSword.name">Shaolin Sword</entry>
 	<entry key="item.ShaolinMasterStaff.name">Shaolin Master Staff</entry>
+	<entry key="item.ShaolinCarryTorch.name">CarryTorch</entry>
 	
-	<entry key="item.ShaolinWaxWoodDao.name">Shaolin WaxWood Dao</entry>
-	<entry key="item.ShaolinMonkWaxWoodSword.name">Shaolin Monk WaxWood Sword</entry>
-	<entry key="item.ShaolinWaxWoodMachete.name">Shaolin WaxWood Machete</entry>
-	<entry key="item.ShaolinWaxWoodButterfly.name">Shaolin WaxWood Butterfly</entry>
-	<entry key="item.ShaolinWaxWoodRisingSun.name">Shaolin WaxWood Rising Sun</entry>
-	<entry key="item.ShaolinWaxWoodCresent.name">Shaolin WaxWood Cresent</entry>
-	<entry key="item.ShaolinWaxWoodShovel.name">Shaolin WaxWood Shovel</entry>
-	<entry key="item.ShaolinWaxWoodShear.name">Shaolin WaxWood Shear</entry>
-	<entry key="item.ShaolinWaxWoodSpear.name">Shaolin WaxWood Spear</entry>
-	<entry key="item.ShaolinWaxWoodPolearm.name">Shaolin WaxWood Polearm</entry>
-	<entry key="item.ShaolinWaxWoodHook.name">Shaolin WaxWood Hook</entry>
-	<entry key="item.ShaolinWaxWoodSword.name">Shaolin WaxWood Sword</entry>
-	<entry key="item.ShaolinWaxWoodMasterStaff.name">Shaolin WaxWood Master Staff</entry>
+	<entry key="item.ShaolinWaxWoodDao.name">Shaolin Wax Wood Dao</entry>
+	<entry key="item.ShaolinMonkWaxWoodSword.name">Shaolin Monk Wax Wood Sword</entry>
+	<entry key="item.ShaolinWaxWoodRisingSun.name">Shaolin Wax Wood Rising Sun</entry>
+	<entry key="item.ShaolinWaxWoodCresent.name">Shaolin Wax Wood Cresent</entry>
+	<entry key="item.ShaolinWaxWoodShovel.name">Shaolin Wax Wood Shovel</entry>
+	<entry key="item.ShaolinWaxWoodSpear.name">Shaolin Wax Wood Spear</entry>
+	<entry key="item.ShaolinWaxWoodPolearm.name">Shaolin Wax Wood Polearm</entry>
+	<entry key="item.ShaolinWaxWoodMasterStaff.name">Shaolin Wax Wood Master Staff</entry>
 	
 	<entry key="item.ShaolinDaoBlade.name">Shaolin Dao Blade</entry>
 	<entry key="item.ShaolinSwordBlade.name">Shaolin Sword Blade</entry>
@@ -66,13 +67,21 @@
 	<entry key="item.ShaolinSpear2_Tip.name">Shaolin Spear Tip</entry>
 	<entry key="item.ShaolinIronRing.name">Shaolin IronRing</entry>
 	
+	<entry key="item.ShaolinStudentRobe.name">Shaolin Student Robe</entry>
+	<entry key="item.ShaolinStudentLegs.name">Shaolin Student Legs</entry>
+	<entry key="item.ShaolinStudentShoes.name">Shaolin Student Shoes</entry>
+	<entry key="item.ShaolinStudentHeadBand.name">Shaolin Student HeadBand</entry>
+	
+	<entry key="item.ItemCherrySlidingDoor.name">Cherry Wood Sliding Door</entry>
+	<entry key="item.ItemBambooSlidingDoor.name">Bamboo Sliding Door</entry>
+	
 	<entry key="item.BambooShaft.name">Bamboo Shaft</entry>
-	<entry key="item.ShaolinWaxWoodStick.name">WaxWood Stick</entry>
+	<entry key="item.ShaolinWaxWoodStick.name">Wax Wood Stick</entry>
 	<entry key="item.ShaolinRattanStick.name">Rattan Stick</entry>
-	<entry key="item.ClothRed.name">Cloth Red</entry>
-	<entry key="item.ClothOrange.name">Cloth Orange</entry>
-	<entry key="item.ClothYellow.name">Cloth Yellow</entry>
-	<entry key="item.ClothWhite.name">Cloth White</entry>
+	<entry key="item.ClothRed.name">Red Cloth</entry>
+	<entry key="item.ClothOrange.name">Orange Cloth</entry>
+	<entry key="item.ClothYellow.name">Yellow Cloth</entry>
+	<entry key="item.ClothWhite.name">White Cloth</entry>
 	
 	<entry key="itemGroup.TabWCS">WarriorCultures Shaolin</entry>
 </properties>

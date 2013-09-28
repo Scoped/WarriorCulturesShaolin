@@ -9,7 +9,7 @@ import net.minecraft.block.material.Material;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
 
-public class Block_ThatchBlock extends Super_Block_LogTextures
+public class Block_ThatchBlock extends Super_Block_Log
 {
 	@SideOnly(Side.CLIENT)
 	public static Icon iconSide;
@@ -46,7 +46,7 @@ public class Block_ThatchBlock extends Super_Block_LogTextures
 	public void registerIcons(IconRegister icon)
 	{
 		iconSide = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_vertical"));
-		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_side"));
+		iconTop = icon.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_top"));
 	}
 	
 	protected String getUnwrappedUnlocalizedName(String unlocalizedName)

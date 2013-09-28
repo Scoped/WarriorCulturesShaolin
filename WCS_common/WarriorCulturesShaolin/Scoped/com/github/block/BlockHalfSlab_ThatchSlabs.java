@@ -23,7 +23,7 @@ public class BlockHalfSlab_ThatchSlabs extends BlockHalfSlab
 	public static Icon iconSide2;
 	
     private String iconTopString = "ThatchBlock_vertical";
-    private String iconSideString = "ThatchBlock_side";
+    private String iconSideString = "ThatchBlock_top";
     private String iconSide2String = "ThatchBlock_horizontal";
 	
 	@SideOnly(Side.CLIENT)

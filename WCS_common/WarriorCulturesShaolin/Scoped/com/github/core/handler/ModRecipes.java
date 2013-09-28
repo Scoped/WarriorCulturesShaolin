@@ -3,6 +3,7 @@ package WarriorCulturesShaolin.Scoped.com.github.core.handler;
 import WarriorCulturesShaolin.Scoped.com.github.item.ModItems;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
+import net.minecraftforge.oredict.OreDictionary;
 import cpw.mods.fml.common.registry.GameRegistry;
 
 public class ModRecipes
@@ -180,10 +181,45 @@ public class ModRecipes
 						Character.valueOf('S'), new ItemStack(ModItems.Shaolin_Sticks, 1, 0),
 						Character.valueOf('H'), new ItemStack(ModItems.Shaolin_Tips, 1, 1),
 						Character.valueOf('B'), new ItemStack(ModItems.Shaolin_Tips, 1, 2));
+			/**
+			 * Armor
+			 */
+				/**
+				 * Shield Hat
+				 *//*
+				GameRegistry.addRecipe(new ItemStack(ModItems.Shaolin_ShieldHat),
+						" S ",
+						"SSS",
+						" S ",
+						Character.valueOf('S'), new ItemStack(ModItems.Shaolin_BambooShaft));*/
+				/**
+				 * Tiger Shield Hat
+				 *//*
+				GameRegistry.addRecipe(new ItemStack(ModItems.Shaolin_TigerShieldHat),
+						"RSR",
+						"SSS",
+						"YSY",
+						Character.valueOf('R'), new ItemStack(ModItems.ModItems.Shaolin_Cloths, 1, 0),
+						Character.valueOf('S'), new ItemStack(ModItems.Shaolin_BambooShaft),
+						Character.valueOf('Y'), new ItemStack(ModItems.ModItems.Shaolin_Cloths, 1, 3));*/
 		
 		/**
 		 * Shapeless Recipes.
 		 */
+			
+		   /**
+ 			* Tools
+ 			*/
+				/**
+				 * CarryTorch
+				 */
+				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_CarryTorch), new Object[]
+						{
+							new ItemStack(Item.coal),
+							new ItemStack(Item.flintAndSteel, OreDictionary.WILDCARD_VALUE),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
+						});
+				
 			/**
 			 * Weapons
 			 */
@@ -192,70 +228,80 @@ public class ModRecipes
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Butterfly, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 0), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 0),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Dao
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Dao, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 1), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 1),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Wax Dao
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Dao, 1, 1), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 1), new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 1),
+							new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
 						});
 				/**
 				 * Hook
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Hook, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 4), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 4),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * RisingSun
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_RisingSun, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 5), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 5),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Wax RisingSun
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_RisingSun, 1, 1), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 5), new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 5),
+							new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
 						});
 				/**
 				 * Shear
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Shear, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 6), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 6),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Machete
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Machete, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 7), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 7),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Sword
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Sword, 1, 0), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 8), new ItemStack(ModItems.Shaolin_BambooShaft)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 8),
+							new ItemStack(ModItems.Shaolin_BambooShaft)
 						});
 				/**
 				 * Wax Sword
 				 */
 				GameRegistry.addShapelessRecipe(new ItemStack(ModItems.Shaolin_Sword, 1, 1), new Object[]
 						{
-							new ItemStack(ModItems.Shaolin_Blades, 1, 8), new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
+							new ItemStack(ModItems.Shaolin_Blades, 1, 8),
+							new ItemStack(ModItems.Shaolin_Sticks, 1, 0)
 						});
 		
 	}

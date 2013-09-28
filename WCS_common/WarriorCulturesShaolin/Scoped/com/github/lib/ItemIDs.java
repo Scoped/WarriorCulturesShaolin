@@ -14,6 +14,9 @@ public class ItemIDs
 	public static final int ITEM_SHAOLIN_BAMBOOSHAFT_ID_DEFAULT = 3863;
 	public static final int ITEM_SHAOLIN_STICKS_ID_DEFAULT = 3864;
 	
+	public static final int ITEM_DOOR_CHERRYWOOD_ID_DEFAULT = 3868;
+	public static final int ITEM_DOOR_BAMBOO_ID_DEFAULT = 3869;
+	
 	/**
 	 * Shaolin Student: Armor - Number of final ints: 4
 	 */
@@ -40,6 +43,7 @@ public class ItemIDs
 	 */
 	public static final int ITEM_SHAOLIN_SHOVEL_ID_DEFAULT = 3850;
 	public static final int ITEM_SHAOLIN_SHEAR_ID_DEFAULT = 3851;
+	public static final int ITEM_SHAOLIN_CARRYTORCH_ID_DEFAULT = 3868;
 	
 	/**
 	 * Monk Monk: Armor - Number of final ints: 4
@@ -74,10 +78,17 @@ public class ItemIDs
 	public static int ITEM_SHAOLIN_BAMBOOSHAFT_ID;
 	public static int ITEM_SHAOLIN_STICKS_ID;
 	public static int ITEM_SHAOLIN_IRONRING_ID;
+	public static int ITEM_DOOR_CHERRYWOOD_ID;
+	public static int ITEM_DOOR_BAMBOO_ID;
 	
 	/**
-	 * Shaolin Student: Armor
+	 * Shaolin: Armor
 	 */
+	public static int ITEM_SHAOLIN_STUDENT_LEGS_ID;
+	public static int ITEM_SHAOLIN_STUDENT_ROBE_ID;
+	public static int ITEM_SHAOLIN_STUDENT_HEADBAND_ID;
+	public static int ITEM_SHAOLIN_STUDENT_SHOES_ID;
+	
 	public static int ITEM_SHAOLIN_LEGS_ID;
 	public static int ITEM_SHAOLIN_ROBE_ID;
 	public static int ITEM_SHAOLIN_HEADBAND_ID;
@@ -101,6 +112,7 @@ public class ItemIDs
 	 */
 	public static int ITEM_SHAOLIN_SHOVEL_ID;
 	public static int ITEM_SHAOLIN_SHEAR_ID;
+	public static int ITEM_SHAOLIN_CARRYTORCH_ID;
 	
 	/**
 	 * Shaolin Monk: Armor

@@ -9,10 +9,12 @@ import net.minecraft.item.EnumToolMaterial;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemSlab;
 import net.minecraftforge.common.EnumHelper;
+import net.minecraftforge.common.MinecraftForge;
 import WarriorCulturesShaolin.Scoped.com.github.block.ModBlocks;
 import WarriorCulturesShaolin.Scoped.com.github.core.handler.ConfigurationHandler;
 import WarriorCulturesShaolin.Scoped.com.github.core.handler.LocalizationHandler;
 import WarriorCulturesShaolin.Scoped.com.github.core.handler.ModRecipes;
+import WarriorCulturesShaolin.Scoped.com.github.core.handler.soundEventHandler;
 import WarriorCulturesShaolin.Scoped.com.github.core.proxy.CommonProxy;
 import WarriorCulturesShaolin.Scoped.com.github.creativeTab.TabWCS;
 import WarriorCulturesShaolin.Scoped.com.github.item.ModItems;
@@ -20,6 +22,7 @@ import WarriorCulturesShaolin.Scoped.com.github.lib.BlockRegistry;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
 import cpw.mods.fml.common.Mod;
+import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.Mod.Init;
 import cpw.mods.fml.common.Mod.PostInit;
 import cpw.mods.fml.common.Mod.PreInit;
@@ -85,5 +88,7 @@ public class WarriorCultures_Shaolin
         Item.itemsList[ModBlocks.CherryPlanksSingleSlab.blockID] = (new ItemSlab(ModBlocks.CherryPlanksSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.CherryPlanksSingleSlab, (BlockHalfSlab)ModBlocks.CherryPlanksDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLECHERRYWOOD_NAME);
         Item.itemsList[ModBlocks.BambooSingleSlab.blockID] = (new ItemSlab(ModBlocks.BambooSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.BambooSingleSlab, (BlockHalfSlab)ModBlocks.BambooDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLEBAMBOO_NAME);
         Item.itemsList[ModBlocks.ThatchSingleSlab.blockID] = (new ItemSlab(ModBlocks.ThatchSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.ThatchSingleSlab, (BlockHalfSlab)ModBlocks.ThatchDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLETHATCH_NAME);
+	
+        MinecraftForge.EVENT_BUS.register(new soundEventHandler());
 	}
 }

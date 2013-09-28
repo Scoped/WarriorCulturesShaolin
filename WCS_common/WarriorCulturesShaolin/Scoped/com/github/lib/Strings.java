@@ -14,8 +14,15 @@ public class Strings
 	public static final String BLOCK_PLANKS_CHERRYWOOD_NAME = "CherryWoodPlanks";
 	public static final String BLOCK_PANE_BAMBOOPAPERWALL_NAME = "BambooPaperWall";
 	public static final String BLOCK_PANE_CHERRYPAPERWALL_NAME = "CherryPaperWall";
-	public static final String BLOCK_GLASSBLOCK_NAME = "GlassBlock";
 	public static final String BLOCK_THATCHBLOCK_NAME = "ThatchBlock";
+	public static final String BLOCK_CHERRYWOODLOG_NAME = "CherryWoodLog";
+	public static final String BLOCK_WAXWOODLOG_NAME = "WaxWoodLog";
+	public static final String BLOCK_LEAVES_CHERRYBLOSSOMS_NAME = "CherryBlossoms";
+	public static final String BLOCK_STAIRS_CHERRYWOOD_NAME = "CherryWoodStairs";
+	public static final String BLOCK_STAIRS_BAMBOOWOOD_NAME = "BambooWoodStairs";
+	public static final String BLOCK_STAIRS_THATCH_NAME = "ThatchStairs";
+	public static final String BLOCK_DOOR_CHERRYPAPER_NAME = "CherryWoodSlidingDoor";
+	public static final String BLOCK_DOOR_BAMBOOPAPER_NAME = "BambooPaperDoor";
 	
 	/**
 	 * BlockHalfSlabs
@@ -39,9 +46,17 @@ public class Strings
 	public static final String ITEM_SHAOLIN_BAMBOOSHAFT_NAME = "BambooShaft";
 	public static final String ITEM_SHAOLIN_STICKS_NAME = "Stick";
 	
+	public static final String ITEM_DOOR_CHERRY_NAME = "ItemCherrySlidingDoor";
+	public static final String ITEM_DOOR_BAMBOO_NAME = "ItemBambooSlidingDoor";
+	
 	/**
-	 * Shaolin Student: Armor
+	 * Shaolin: Armor
 	 */
+	public static final String ITEM_SHAOLIN_STUDENT_LEGS_NAME = "ShaolinStudentLegs";
+	public static final String ITEM_SHAOLIN_STUDENT_ROBE_NAME = "ShaolinStudentRobe";
+	public static final String ITEM_SHAOLIN_STUDENT_HEADBAND_NAME = "ShaolinStudentHeadBand";
+	public static final String ITEM_SHAOLIN_STUDENT_SHOES_NAME = "ShaolinStudentShoes";
+	
 	public static final String ITEM_SHAOLIN_LEGS_NAME = "ShaolinLegs";
 	public static final String ITEM_SHAOLIN_ROBE_NAME = "ShaolinRobe";
 	public static final String ITEM_SHAOLIN_HEADBAND_NAME = "ShaolinHeadBand";
@@ -65,6 +80,7 @@ public class Strings
 	 */
 	public static final String ITEM_SHAOLIN_SHOVEL_NAME = "ShaolinShovel";
 	public static final String ITEM_SHAOLIN_SHEAR_NAME = "ShaolinShear";
+	public static final String ITEM_SHAOLIN_CARRYTORCH_NAME = "ShaolinCarryTorch";
 	
 	/**
 	 * Shaolin Monk: Armor

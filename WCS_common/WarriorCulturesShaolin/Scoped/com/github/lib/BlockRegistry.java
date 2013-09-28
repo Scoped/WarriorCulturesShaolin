@@ -22,8 +22,15 @@ public class BlockRegistry
 		GameRegistry.registerBlock(ModBlocks.ThatchDoubleSlab, Strings.BLOCKHALFSLAB_DOUBLETHATCH_NAME);
 		GameRegistry.registerBlock(ModBlocks.BambooPaperWall, Strings.BLOCK_PANE_BAMBOOPAPERWALL_NAME);
 		GameRegistry.registerBlock(ModBlocks.CherryPaperWall, Strings.BLOCK_PANE_CHERRYPAPERWALL_NAME);
-		GameRegistry.registerBlock(ModBlocks.WCSGlassBlock, Strings.BLOCK_GLASSBLOCK_NAME);
 		GameRegistry.registerBlock(ModBlocks.ThatchBlock, Strings.BLOCK_THATCHBLOCK_NAME);
+		GameRegistry.registerBlock(ModBlocks.CherryWoodLog, Strings.BLOCK_CHERRYWOODLOG_NAME);
+		GameRegistry.registerBlock(ModBlocks.WaxWoodLog, Strings.BLOCK_WAXWOODLOG_NAME);
+		GameRegistry.registerBlock(ModBlocks.CherryBlossoms, Strings.BLOCK_LEAVES_CHERRYBLOSSOMS_NAME);
+		GameRegistry.registerBlock(ModBlocks.CherryWoodStairs, Strings.BLOCK_STAIRS_CHERRYWOOD_NAME);
+		GameRegistry.registerBlock(ModBlocks.BambooWoodStairs, Strings.BLOCK_STAIRS_BAMBOOWOOD_NAME);
+		GameRegistry.registerBlock(ModBlocks.ThatchStairs, Strings.BLOCK_STAIRS_THATCH_NAME);
+		GameRegistry.registerBlock(ModBlocks.CherryPaperDoor, Strings.BLOCK_DOOR_CHERRYPAPER_NAME);
+		//GameRegistry.registerBlock(ModBlocks.BambooPaperDoor, Strings.BLOCK_DOOR_BAMBOOPAPER_NAME);
 		
 	}
 
