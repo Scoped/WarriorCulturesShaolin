@@ -52,8 +52,8 @@ public class WarriorCultures_Shaolin
 	public static CommonProxy proxy;
 	
     /**EnumTool*/
-    public static EnumToolMaterial ShaolinTools = EnumHelper.addToolMaterial("ShaolinWeapon", 34, 123, 4.0F, 2.0F, 12);
-    public static EnumArmorMaterial ShaolinCloth = EnumHelper.addArmorMaterial("ShaolinCloth", 35, new int[] {1, 1, 1, 1}, 25);
+    public static EnumToolMaterial ShaolinTools = EnumHelper.addToolMaterial("ShaolinWeapon", 2, 320, 6.0F, 2.0F, 12);
+    public static EnumArmorMaterial ShaolinCloth = EnumHelper.addArmorMaterial("ShaolinCloth", 2, new int[] {1, 1, 1, 1}, 25);
     
     /**
      * CreativeTab

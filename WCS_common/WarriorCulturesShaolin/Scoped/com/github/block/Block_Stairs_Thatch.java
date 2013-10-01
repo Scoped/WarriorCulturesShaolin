@@ -1,5 +1,7 @@
 package WarriorCulturesShaolin.Scoped.com.github.block;
 
+import java.util.Random;
+
 import WarriorCulturesShaolin.Scoped.com.github.WarriorCultures_Shaolin;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Reference;
 import WarriorCulturesShaolin.Scoped.com.github.lib.Strings;
@@ -7,15 +9,18 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockStairs;
 import net.minecraft.client.renderer.texture.IconRegister;
 import net.minecraft.util.Icon;
+import net.minecraft.world.World;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
 
 public class Block_Stairs_Thatch extends BlockStairs
 {
 	@SideOnly(Side.CLIENT)
+	public static Icon iconTop;
+	@SideOnly(Side.CLIENT)
 	public static Icon iconSide;
 	@SideOnly(Side.CLIENT)
-	public static Icon iconTop;
+	public static Icon iconSide2;
 	/** The block that is used as model for the stair. */
     private final Block modelBlock;
     private final int modelBlockMetadata;
@@ -33,37 +38,110 @@ public class Block_Stairs_Thatch extends BlockStairs
         this.setCreativeTab(WarriorCultures_Shaolin.TabWCS);
 	}
 	
-	@SideOnly(Side.CLIENT)
+    @SideOnly(Side.CLIENT)
 
     /**
      * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
      */
+    /**
+     * The side the texture is facing:
+     * 0 = bottom
+	 * 1 = top
+	 * 2 = north
+	 * 3 = south
+	 * 4 = west
+	 * 5 = east
+	 * 
+     * When placing block, metadata:
+     * 0 = east
+     * 1 = west
+     * 2 = south
+     * 3 = north
+     * 
+     * When placing block upside down, metadata:
+     * 4 = east
+     * 5 = west
+     * 6 = south
+     * 7 = north
+     */
+    /**
+     * I think for complete customization use metadata = number && (side == number) ? icon
+     */
     public Icon getIcon(int side, int metadata)
     {
-        int k = metadata & 12;
-        int l = metadata & 3;
-        return k == 0 && (side == 1 || side == 0) ? this.func_111049_d(l) :
-        	(k == 4 && (side == 5 || side == 4) ? this.func_111049_d(l) :
-        		(k == 8 && (side == 2 || side == 3) ? this.func_111049_d(l) :
-        			this.func_111048_c(l)));
+        return
+        		/**Normal. Top and bottom facing textures.*/
+        		metadata == 0 && (side == 0 || side == 1) ? this.icon_side() : // Normal. Place facing east.
+        			metadata == 1 && (side == 0 || side == 1) ? this.icon_side() : // Normal. Place facing west.
+        				metadata == 2 && (side == 0 || side == 1) ? this.icon_side2() : // Normal. Place facing south.
+        					metadata == 3 && (side == 0 || side == 1) ? this.icon_side2() : //Normal. Place facing north.
+        						/**Normal. North and south facing textures.*/
+	        					metadata == 0 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing east.
+	        		        		metadata == 1 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing west.
+	        		        			metadata == 2 && (side == 2 || side == 3) ? this.icon_side2() : // Normal. Place facing south.
+	        		        				metadata == 3 && (side == 2 || side == 3) ? this.icon_side2() : //Normal. Place facing north.
+	        		        					/**Normal. West and east facing textures.*/
+	        		        					metadata == 0 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing east.
+	        		        		        		metadata == 1 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing west.
+	        		        		        			metadata == 2 && (side == 4 || side == 5) ? this.icon_top() : // Normal. Place facing south.
+	        		        		        				metadata == 3 && (side == 4 || side == 5) ? this.icon_top() : //Normal. Place facing north.
+	        	/**Upside down. Top and bottom facing textures*/
+				metadata == 4 && (side == 0 || side == 1) ? this.icon_side() : // Upside down. Place facing east.
+					metadata == 5 && (side == 0 || side == 1) ? this.icon_side() : // Upside down. Place facing west.
+						metadata == 6 && (side == 0 || side == 1) ? this.icon_side2() : // Upside down. Place facing south.
+							metadata == 7 && (side == 0 || side == 1) ? this.icon_side2() : //Upside down. Place facing north.
+        						/**Upside down. North and south facing textures.*/
+	        					metadata == 4 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing east.
+	        		        		metadata == 5 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing west.
+	        		        			metadata == 6 && (side == 2 || side == 3) ? this.icon_side2() : // Normal. Place facing south.
+	        		        				metadata == 7 && (side == 2 || side == 3) ? this.icon_side2() : //Normal. Place facing north.
+	        		        					/**Upside down. West and east facing textures.*/
+	        		        					metadata == 4 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing east.
+	        		        		        		metadata == 5 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing west.
+	        		        		        			metadata == 6 && (side == 4 || side == 5) ? this.icon_top() : // Normal. Place facing south.
+	        		        		        				metadata == 7 && (side == 4 || side == 5) ? this.icon_top() : //Normal. Place facing north.
+	        					
+        					   
+        this.icon_top();
     }
 
 	@SideOnly(Side.CLIENT)
 	
-	public Icon func_111048_c(int i)
+	public Icon icon_top()
 	{
-		i = 0;
 		return this.iconTop;
 	}
 	
 	@SideOnly(Side.CLIENT)
 	
-	protected Icon func_111049_d(int i)
+	public Icon icon_side()
 	{
-		i = 0;
 		return this.iconSide;
 	}
     
+	@SideOnly(Side.CLIENT)
+	
+	public Icon icon_side2()
+	{
+		return this.iconSide2;
+	}
+    
+    @SideOnly(Side.CLIENT)
+
+    /**
+     * A randomly called display update to be able to add particles or other items for display
+     */
+    public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
+    {
+        if (par1World.canLightningStrikeAt(par2, par3 + 1, par4) && !par1World.doesBlockHaveSolidTopSurface(par2, par3 - 1, par4) && par5Random.nextInt(15) == 1)
+        {
+            double d0 = (double)((float)par2 + par5Random.nextFloat());
+            double d1 = (double)par3 - 0.05D;
+            double d2 = (double)((float)par4 + par5Random.nextFloat());
+            par1World.spawnParticle("dripWater", d0, d1, d2, 0.0D, 0.0D, 0.0D);
+        }
+    }
+	
     @SideOnly(Side.CLIENT)
 
     /**
@@ -72,7 +150,8 @@ public class Block_Stairs_Thatch extends BlockStairs
      */
     public void registerIcons(IconRegister register)
     {
-    	iconSide = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_top"));
-    	iconTop = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_vertical"));
+    	iconTop = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_top"));
+    	iconSide = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_vertical"));
+    	iconSide2 = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "ThatchBlock_horizontal"));
     }
 }

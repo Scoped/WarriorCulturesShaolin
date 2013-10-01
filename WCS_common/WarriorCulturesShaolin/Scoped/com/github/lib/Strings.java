@@ -23,6 +23,7 @@ public class Strings
 	public static final String BLOCK_STAIRS_THATCH_NAME = "ThatchStairs";
 	public static final String BLOCK_DOOR_CHERRYPAPER_NAME = "CherryWoodSlidingDoor";
 	public static final String BLOCK_DOOR_BAMBOOPAPER_NAME = "BambooPaperDoor";
+	public static final String BLOCK_FENCE_BAMBOO_NAME = "BambooFence";
 	
 	/**
 	 * BlockHalfSlabs

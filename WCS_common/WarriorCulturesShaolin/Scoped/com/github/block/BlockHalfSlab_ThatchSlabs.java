@@ -114,6 +114,22 @@ public class BlockHalfSlab_ThatchSlabs extends BlockHalfSlab
     @SideOnly(Side.CLIENT)
 
     /**
+     * A randomly called display update to be able to add particles or other items for display
+     */
+    public void randomDisplayTick(World par1World, int par2, int par3, int par4, Random par5Random)
+    {
+        if (par1World.canLightningStrikeAt(par2, par3 + 1, par4) && !par1World.doesBlockHaveSolidTopSurface(par2, par3 - 1, par4) && par5Random.nextInt(15) == 1)
+        {
+            double d0 = (double)((float)par2 + par5Random.nextFloat());
+            double d1 = (double)par3 - 0.05D;
+            double d2 = (double)((float)par4 + par5Random.nextFloat());
+            par1World.spawnParticle("dripWater", d0, d1, d2, 0.0D, 0.0D, 0.0D);
+        }
+    }
+	
+    @SideOnly(Side.CLIENT)
+
+    /**
      * only called by clickMiddleMouseButton , and passed to inventory.setCurrentItem (along with isCreative)
      */
     public int idPicked(World par1World, int par2, int par3, int par4)

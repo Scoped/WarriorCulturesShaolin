@@ -13,9 +13,11 @@ import net.minecraft.util.Icon;
 public class Block_Stairs_Bamboo extends BlockStairs
 {
 	@SideOnly(Side.CLIENT)
+	public static Icon iconTop;
+	@SideOnly(Side.CLIENT)
 	public static Icon iconSide;
 	@SideOnly(Side.CLIENT)
-	public static Icon iconTop;
+	public static Icon iconSide2;
 	/** The block that is used as model for the stair. */
     private final Block modelBlock;
     private final int modelBlockMetadata;
@@ -38,32 +40,89 @@ public class Block_Stairs_Bamboo extends BlockStairs
     /**
      * From the specified side and block metadata retrieves the blocks texture. Args: side, metadata
      */
+    /**
+     * The side the texture is facing:
+     * 0 = bottom
+	 * 1 = top
+	 * 2 = north
+	 * 3 = south
+	 * 4 = west
+	 * 5 = east
+	 * 
+     * When placing block, metadata:
+     * 0 = east
+     * 1 = west
+     * 2 = south
+     * 3 = north
+     * 
+     * When placing block upside down, metadata:
+     * 4 = east
+     * 5 = west
+     * 6 = south
+     * 7 = north
+     */
+    /**
+     * I think for complete customization use metadata = number && (side == number) ? icon
+     */
     public Icon getIcon(int side, int metadata)
     {
-        int k = metadata & 12;
-        int l = metadata & 3;
-        return k == 0 && (side == 1 || side == 0) ? this.func_111048_c(l) :
-        	(k == 4 && (side == 5 || side == 4) ? this.func_111048_c(l) :
-        		(k == 8 && (side == 2 || side == 3) ? this.func_111048_c(l) :
-        			this.func_111049_d(l)));
+        return
+        		/**Normal. Top and bottom facing textures.*/
+        		metadata == 0 && (side == 0 || side == 1) ? this.icon_side() : // Normal. Place facing east.
+        			metadata == 1 && (side == 0 || side == 1) ? this.icon_side() : // Normal. Place facing west.
+        				metadata == 2 && (side == 0 || side == 1) ? this.icon_side2() : // Normal. Place facing south.
+        					metadata == 3 && (side == 0 || side == 1) ? this.icon_side2() : //Normal. Place facing north.
+        						/**Normal. North and south facing textures.*/
+	        					metadata == 0 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing east.
+	        		        		metadata == 1 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing west.
+	        		        			metadata == 2 && (side == 2 || side == 3) ? this.icon_side2() : // Normal. Place facing south.
+	        		        				metadata == 3 && (side == 2 || side == 3) ? this.icon_side2() : //Normal. Place facing north.
+	        		        					/**Normal. West and east facing textures.*/
+	        		        					metadata == 0 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing east.
+	        		        		        		metadata == 1 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing west.
+	        		        		        			metadata == 2 && (side == 4 || side == 5) ? this.icon_top() : // Normal. Place facing south.
+	        		        		        				metadata == 3 && (side == 4 || side == 5) ? this.icon_top() : //Normal. Place facing north.
+	        	/**Upside down. Top and bottom facing textures*/
+				metadata == 4 && (side == 0 || side == 1) ? this.icon_side() : // Upside down. Place facing east.
+					metadata == 5 && (side == 0 || side == 1) ? this.icon_side() : // Upside down. Place facing west.
+						metadata == 6 && (side == 0 || side == 1) ? this.icon_side2() : // Upside down. Place facing south.
+							metadata == 7 && (side == 0 || side == 1) ? this.icon_side2() : //Upside down. Place facing north.
+        						/**Upside down. North and south facing textures.*/
+	        					metadata == 4 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing east.
+	        		        		metadata == 5 && (side == 2 || side == 3) ? this.icon_top() : // Normal. Place facing west.
+	        		        			metadata == 6 && (side == 2 || side == 3) ? this.icon_side2() : // Normal. Place facing south.
+	        		        				metadata == 7 && (side == 2 || side == 3) ? this.icon_side2() : //Normal. Place facing north.
+	        		        					/**Upside down. West and east facing textures.*/
+	        		        					metadata == 4 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing east.
+	        		        		        		metadata == 5 && (side == 4 || side == 5) ? this.icon_side2() : // Normal. Place facing west.
+	        		        		        			metadata == 6 && (side == 4 || side == 5) ? this.icon_top() : // Normal. Place facing south.
+	        		        		        				metadata == 7 && (side == 4 || side == 5) ? this.icon_top() : //Normal. Place facing north.
+	        					
+        					   
+        this.icon_top();
     }
     
 	@SideOnly(Side.CLIENT)
 	
-	public Icon func_111048_c(int i)
+	public Icon icon_top()
 	{
-		i = 0;
 		return this.iconTop;
 	}
 	
 	@SideOnly(Side.CLIENT)
 	
-	protected Icon func_111049_d(int i)
+	public Icon icon_side()
 	{
-		i = 0;
 		return this.iconSide;
 	}
     
+	@SideOnly(Side.CLIENT)
+	
+	public Icon icon_side2()
+	{
+		return this.iconSide2;
+	}
+	
     @SideOnly(Side.CLIENT)
 
     /**
@@ -72,7 +131,8 @@ public class Block_Stairs_Bamboo extends BlockStairs
      */
     public void registerIcons(IconRegister register)
     {
-    	iconSide = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_vertical"));
     	iconTop = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_top"));
+    	iconSide = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_vertical"));
+    	iconSide2 = register.registerIcon(String.format("%s:%s", Reference.MOD_ID.toLowerCase(), "BambooBlock_horizontal"));
     }
 }

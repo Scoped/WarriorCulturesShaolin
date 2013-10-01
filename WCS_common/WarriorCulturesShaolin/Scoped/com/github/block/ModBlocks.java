@@ -19,9 +19,10 @@ public class ModBlocks
 	public static Block CherryWoodStairs;
 	public static Block BambooWoodStairs;
 	public static Block ThatchStairs;
-	
 	public static Block CherryPaperDoor;
 	public static Block BambooPaperDoor;
+	
+	public static Block BambooFence;
 	
 	public static Block_Leaves_CherryBlossoms CherryBlossoms;
 	
@@ -51,9 +52,10 @@ public class ModBlocks
 		CherryWoodStairs = new Block_Stairs_CherryWood(BlockIDs.BLOCK_STAIRS_CHERRYWOOD_ID, CherryWoodPlanks, 0);
 		BambooWoodStairs = new Block_Stairs_Bamboo(BlockIDs.BLOCK_STAIRS_BAMBOOWOOD_ID, BambooBlock, 0);
 		ThatchStairs = new Block_Stairs_Thatch(BlockIDs.BLOCK_STAIRS_THATCH_ID, ThatchBlock, 0);
-		
 		CherryPaperDoor = new Block_Door_CherryPaper(BlockIDs.BLOCK_DOOR_CHERRYPAPER_ID, Material.wood, "CherryWood").setUnlocalizedName(Strings.BLOCK_DOOR_CHERRYPAPER_NAME).setHardness(3.0F).setStepSound(Block.soundWoodFootstep).func_111022_d("CherryPaperWall");
 		BambooPaperDoor = new Block_Door_BambooPaper(BlockIDs.BLOCK_DOOR_BAMBOOPAPER_ID, Material.wood, "Bamboo").setUnlocalizedName(Strings.BLOCK_DOOR_BAMBOOPAPER_NAME).setHardness(3.0F).setStepSound(Block.soundWoodFootstep).func_111022_d("BambooPaperWall");
+		
+		BambooFence = new Block_Fence_Bamboo(BlockIDs.BLOCK_FENCE_BAMBOO_ID, "BambooBlock", Material.wood);
 		
 	}
 }

@@ -19,6 +19,8 @@ public class BlockIDs
 	public static final int BLOCK_DOOR_BAMBOOPAPER_ID_DEFAULT = 618;
 	public static final int BLOCK_DOOR_CHERRYPAPER_ID_DEFAULT = 619;
 	
+	public static final int BLOCK_FENCE_BAMBOO_ID_DEFAULT = 621;
+	
 	public static final int BLOCKHALFSLAB_CHERRYPLANKSSINGLESLAB_ID_DEFAULT = 2450;
 	public static final int BLOCKHALFSLAB_CHERRYPLANKSDOUBLESLAB_ID_DEFAULT = 2451;
 	public static final int BLOCKHALFSLAB_BAMBOOSINGLESLAB_ID_DEFAULT = 2452;
@@ -44,6 +46,8 @@ public class BlockIDs
 	
 	public static int BLOCK_DOOR_CHERRYPAPER_ID;
 	public static int BLOCK_DOOR_BAMBOOPAPER_ID;
+	
+	public static int BLOCK_FENCE_BAMBOO_ID;
 	
 	public static int BLOCKHALFSLAB_CHERRYPLANKSSINGLESLAB_ID;
 	public static int BLOCKHALFSLAB_CHERRYPLANKSDOUBLESLAB_ID;

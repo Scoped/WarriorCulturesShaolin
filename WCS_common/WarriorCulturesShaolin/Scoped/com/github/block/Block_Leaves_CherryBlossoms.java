@@ -39,7 +39,7 @@ public class Block_Leaves_CherryBlossoms extends BlockLeavesBase
 		this.setUnlocalizedName(Strings.BLOCK_LEAVES_CHERRYBLOSSOMS_NAME);
 	}
 	
-	   /**
+	/**
      * ejects contained items into the world, and notifies neighbours of an update, as appropriate
      */
     public void breakBlock(World par1World, int par2, int par3, int par4, int par5, int par6)

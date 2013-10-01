@@ -1,5 +1,6 @@
 package WarriorCulturesShaolin.Scoped.com.github.lib;
 
+import WarriorCulturesShaolin.Scoped.com.github.TileEntities.TE_BambooFence;
 import WarriorCulturesShaolin.Scoped.com.github.block.ModBlocks;
 import cpw.mods.fml.common.registry.GameRegistry;
 
@@ -29,8 +30,12 @@ public class BlockRegistry
 		GameRegistry.registerBlock(ModBlocks.CherryWoodStairs, Strings.BLOCK_STAIRS_CHERRYWOOD_NAME);
 		GameRegistry.registerBlock(ModBlocks.BambooWoodStairs, Strings.BLOCK_STAIRS_BAMBOOWOOD_NAME);
 		GameRegistry.registerBlock(ModBlocks.ThatchStairs, Strings.BLOCK_STAIRS_THATCH_NAME);
-		GameRegistry.registerBlock(ModBlocks.CherryPaperDoor, Strings.BLOCK_DOOR_CHERRYPAPER_NAME);
-		//GameRegistry.registerBlock(ModBlocks.BambooPaperDoor, Strings.BLOCK_DOOR_BAMBOOPAPER_NAME);
+		GameRegistry.registerBlock(ModBlocks.BambooFence, Strings.BLOCK_FENCE_BAMBOO_NAME);
+		
+		/**
+		 * TileEntity Registration
+		 */
+        GameRegistry.registerTileEntity(TE_BambooFence.class, "BambooFenceTE");
 		
 	}
 

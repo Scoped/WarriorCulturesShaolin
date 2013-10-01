@@ -13,9 +13,10 @@
 	<entry key="tile.BambooWoodStairs.name">Bamboo Wood Stairs</entry>
 	<entry key="tile.ThatchStairs.name">Thatch Stairs</entry>
 	<entry key="tile.CherryWoodSlidingDoor.name">Cherry Wood Sliding Door</entry>
-	
 	<entry key="tile.BambooPaperWall.name">Bamboo Paper Wall</entry>
 	<entry key="tile.CherryPaperWall.name">Cherry Paper Wall</entry>
+	
+	<entry key="tile.BambooFence.name">Bamboo Fence</entry>
 	
 	<entry key="tile.BambooWoodDoubleSlab.name">Bamboo Double Slab</entry>
 	<entry key="tile.BambooWoodSingleSlab.name">Bamboo Single Slab</entry>
