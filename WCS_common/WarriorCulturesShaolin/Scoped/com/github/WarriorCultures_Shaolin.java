@@ -36,6 +36,7 @@ import cpw.mods.fml.common.network.NetworkMod;
 		modid = Reference.MOD_ID ,
 		name = Reference.MOD_NAME,
 		version = Reference.VERSION)
+		//dependencies = Reference.DEPENDENCIES)
 	
 	@NetworkMod(
 		channels = (Reference.CHANNEL_NAME),
@@ -76,7 +77,7 @@ public class WarriorCultures_Shaolin
 		ModRecipes.recipesInit();
 	}
 	
-	@Init
+	@Init //@EventHandeler
 	public void init(FMLInitializationEvent event)
 	{
 		
@@ -88,7 +89,7 @@ public class WarriorCultures_Shaolin
         Item.itemsList[ModBlocks.CherryPlanksSingleSlab.blockID] = (new ItemSlab(ModBlocks.CherryPlanksSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.CherryPlanksSingleSlab, (BlockHalfSlab)ModBlocks.CherryPlanksDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLECHERRYWOOD_NAME);
         Item.itemsList[ModBlocks.BambooSingleSlab.blockID] = (new ItemSlab(ModBlocks.BambooSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.BambooSingleSlab, (BlockHalfSlab)ModBlocks.BambooDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLEBAMBOO_NAME);
         Item.itemsList[ModBlocks.ThatchSingleSlab.blockID] = (new ItemSlab(ModBlocks.ThatchSingleSlab.blockID - 256, (BlockHalfSlab)ModBlocks.ThatchSingleSlab, (BlockHalfSlab)ModBlocks.ThatchDoubleSlab, false)).setUnlocalizedName(Strings.BLOCKHALFSLAB_SINGLETHATCH_NAME);
-	
+        
         MinecraftForge.EVENT_BUS.register(new soundEventHandler());
 	}
 }
